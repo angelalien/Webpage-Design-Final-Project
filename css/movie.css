@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url("nav+footer.css");
+@import url("rwd.css");
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:"微軟正黑體";
+	
+}
+
+/*banner*/
+
+#m1, #m2{
+	width:100%;	
+	
+}
+
+#s_pic, #v_pic{
+	position: relative;
+	width:100%;
+	overflow:hidden;
+}
+
+#s_pic{
+	display:none;
+}
+
+#s_pic img, #v_pic img{
+	width:100%;
+}
+
+/*title*/
+
+.content_title{
+	padding:50px 40px;		
+	color:#bb8784;	
+	text-align:center;
+	background:#f1dfc7;
+}
+
+.content_title h1{	
+	color:#bb8784;	
+	font-size:30px;
+	font-weight:600;
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing:5px;
+}
+
+
+/*article*/
+
+.content{
+	width:100%;	
+	position:relative;
+	padding:30px 0px 10px;
+	background:url(../images/index_bg.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+article{
+	width:90%;
+	box-sizing:border-box;
+	margin:0px auto 30px;
+	padding:10px;
+	background:rgb(255,255,255,0.8);
+	letter-spacing:3px;
+}
+
+article .picbox, article .desbox{
+	align-items: center;
+	box-sizing:border-box;
+	padding:10px;
+}
+article .desbox{
+	line-height:1.5em;/*1.5倍行高*/
+}
+
+article .picbox{	
+	justify-content:center;
+}
+
+.desbox h2{
+	color:#4a596a;
+	line-height:1.5em;
+	padding:5px 0px;
+	font-family: 'Noto Serif TC', serif;
+}
+
+.desbox p{
+	text-align:justify;
+	padding:10px 0px;
+	
+}
+
+mark{
+	background:#bb8784;
+	color:#fff;
+	padding:5px;
+}
+
+.picbox img{
+	width:100%;
+}
+
+/*footer*/
+footer{
+	clear:both;
+}
+
+@media only screen and (min-width: 768px) {
+
+/*banner*/	
+#m2{
+	display:none;
+}
+
+#s_pic{
+	display:block;
+}
+
+.content_title h1{	
+	font-size:50px;
+}
+
+/*article*/
+
+article{
+	display: flex;
+	padding:10px 40px 10px 10px;
+	width:80%;
+}
+
+article .picbox{
+	display:-webkit-flex;
+	display: flex;
+}
+.desbox h2{
+	padding:20px 0px;
+}
+
+.picbox img{
+	width:70%;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

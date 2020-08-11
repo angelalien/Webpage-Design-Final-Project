@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url("nav+footer.css");
+@import url("rwd.css");
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:"微軟正黑體";
+}
+
+
+/*banner*/
+.banner_bg{	
+	position:relative;
+	display:block;	
+	float:right;
+	min-width:980px;	
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	background:url(../images/index_bg.jpg) no-repeat;
+	background-size:cover;
+	background-position:70% 0%;
+	background-attachment: fixed;	
+}
+
+.text{
+	position:absolute;
+	top:27%;
+	left:9%;
+	color:#bb8784;
+	font-size:15px;
+	letter-spacing:1px;	
+}
+	
+
+.anitext1, .anitext2{	
+	position:absolute;
+	color:#f1dfc7;	
+	text-shadow: 0.05em 0.05em 0.2em #f9c170;
+}
+
+.anitext1{
+	top:19%;
+	left:8%;	
+	z-index:20;
+	font-size:40px;	
+	opacity:0;/*一開始看不到*/
+	
+	animation-name:ant1;/*動畫名稱*/
+	animation-duration:2s;/*動畫時間*/
+	animation-iteration-count:1;/*播放次數*/
+	animation-timing-function:ease;/*動態方式漸慢開始與結束*/
+	animation-delay:0.5s;/*幾秒後播放*/
+	animation-direction:normal;/*動畫播放順序為順左到右向(反向是reverse)*/
+	animation-fill-mode:forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+	
+	-webkit-animation-name:ant1;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-delay:0.5s;
+	-webkit-animation-direction:normal;
+	-webkit-animation-fill-mode:forwards;
+}
+
+.anitext2{
+	top:30%;
+	left:13%;
+	font-size:40px;
+	opacity:0;/*一開始看不到*/
+	
+	animation-name:ant2;/*動畫名稱*/
+	animation-duration:2s;/*動畫時間*/
+	animation-iteration-count:1;/*播放次數*/
+	animation-timing-function:ease;/*動態方式漸慢開始與結束*/
+	animation-delay:1.5s;/*幾秒後播放*/
+	animation-direction:normal;/*動畫播放順序為順左到右向(反向是reverse)*/
+	animation-fill-mode:forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+	
+	-webkit-animation-name:ant2;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-delay:1.5s;
+	-webkit-animation-direction:normal;
+	-webkit-animation-fill-mode:forwards;
+}
+
+@keyframes ant1{
+	from{		
+		opacity:0;
+	}
+	/*要有空格*/
+	to{		
+		opacity:1;		
+	}
+}
+
+@keyframes ant2{
+	from{		
+		opacity:0;			
+	}
+	/*要有空格*/
+	to{		
+		opacity:1;		
+	}
+}
+
+/*article*/
+article{	
+	text-align:center;
+	background:#f1dfc7;
+	padding-bottom:60px;
+}
+
+article h2{	
+	margin:auto;
+	margin-bottom:40px;	
+	padding:50px 0px 20px;
+	border-bottom:1px solid #bb8784;
+	width:70%;
+	color:#bb8784;
+	font-size:50px;
+	font-weight:600;
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing:5px;
+}
+
+article p{	
+	margin:auto;
+	text-align:left;
+	padding-top:5px;
+	color:#4a596a;	
+	width:70%;
+	line-height:1.5em;
+	letter-spacing:5px;
+}
+
+
+/*For tablet & pc*/
+@media only screen and (min-width:768px){
+
+.banner_bg{
+	right:0px;
+}
+
+.text{
+	top:300px;
+	left:13%;
+	font-size:30px;
+	letter-spacing:2px;	
+}
+
+.anitext1{
+	top:200px;
+	left:10%;	
+	z-index:20;
+	font-size:80px;
+	font-family: 'Noto Serif TC', serif;
+	text-shadow: 0.05em 0.05em 0.2em #f9c170;	
+	opacity:0;/*一開始看不到*/
+	
+	animation-name:ant1;/*動畫名稱*/
+	animation-duration:2s;/*動畫時間*/
+	animation-iteration-count:1;/*播放次數*/
+	animation-timing-function:ease;/*動態方式漸慢開始與結束*/
+	animation-delay:0.5s;/*幾秒後播放*/
+	animation-direction:normal;/*動畫播放順序為順左到右向(反向是reverse)*/
+	animation-fill-mode:forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+	
+	-webkit-animation-name:ant1;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-delay:0.5s;
+	-webkit-animation-direction:normal;
+	-webkit-animation-fill-mode:forwards;
+}
+
+.anitext2{
+	top:330px;
+	left:20%;
+	font-size:80px;
+	font-family: 'Noto Serif TC', serif;
+	text-shadow: 0.05em 0.05em 0.2em #f9c170;
+	opacity:0;/*一開始看不到*/
+	
+	animation-name:ant2;/*動畫名稱*/
+	animation-duration:2s;/*動畫時間*/
+	animation-iteration-count:1;/*播放次數*/
+	animation-timing-function:ease;/*動態方式漸慢開始與結束*/
+	animation-delay:1.5s;/*幾秒後播放*/
+	animation-direction:normal;/*動畫播放順序為順左到右向(反向是reverse)*/
+	animation-fill-mode:forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+	
+	-webkit-animation-name:ant2;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-delay:1.5s;
+	-webkit-animation-direction:normal;
+	-webkit-animation-fill-mode:forwards;
+}
+
+article p{	
+	text-align:center;
+	
+}
+
+
+@keyframes ant1{
+	from{		
+		opacity:0;		
+	}
+	/*要有空格*/
+	to{		
+		opacity:1;			
+	}
+}
+
+@keyframes ant2{
+	from{		
+		opacity:0;
+	}
+	/*要有空格*/
+	to{		
+		opacity:1;		
+	}
+}
+
+}

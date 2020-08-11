@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header*/
+header img{	
+	position:fixed;
+	top:10px;
+	left:20px;
+	z-index:1001;
+	height:30px;
+	width:120px;
+}
+
+
+/*menu*/
+.menu{
+	display:block;
+	position:fixed;
+	right:20px;
+	top:10px;
+	z-index:1000;
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+}
+
+.menu:hover{
+	cursor:pointer;
+}
+
+/*nav*/
+nav{	
+	display:none;/*For smartphone*/	
+	position:fixed;
+	top:50px;
+	z-index:1000;
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+	background: rgb(88,107,138,0.8);
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing:5px;
+}
+
+nav ul li{
+	display: block;
+	position:relative;
+	border-bottom:solid #fff 1px;
+}
+
+nav ul li a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	width:100%;
+	padding:45px 20px;
+}
+
+nav ul li a:hover{
+	background:#bb8784;
+}
+
+/*==============level 2==============*/
+nav ul li ul{
+	position:fixed;/*定位在那*/
+	display:none;	
+}
+
+nav ul li:hover > ul{/*nav ul li下面的ul*/
+	display:block;	
+}
+
+nav ul ul{
+	width:100%;	
+}
+
+nav ul ul li{
+	display:block;
+	width:100%;
+	margin:0;
+	padding-left:30px;
+	color:#000;
+	background: rgb(88,107,138,0.8);
+}
+
+nav ul ul li:hover{
+	color:#fff;
+	background:rgba(145,181,221,1);
+}
+
+/*footer*/
+footer{
+	position:relative;
+	padding:10px 0px;
+	background:#4a596a;
+	text-align:center;
+	color:#fff;
+	font-size:13px;
+	
+}
+
+footer a{
+	padding:0px 2px;
+	color:#fff;
+	font-size:20px;
+}
+
+/*For pc*/
+@media only screen and (min-width:1200px){
+	
+.menu{
+	display:none;
+}
+
+nav{
+	display:block;
+	top:0px;
+	z-index:1000;
+	text-align:right;
+	background: rgb(88,107,138,0.3);
+}
+
+nav ul li{
+	display:inline-block;
+	border-bottom:solid #fff 0px;
+}
+
+nav ul li a{
+	padding:15px 20px;
+}
+
+/*level2*/
+nav ul ul li{
+	width:124px;
+	padding:0px;
+	background: rgb(88,107,138,0.3);
+}
+
+}

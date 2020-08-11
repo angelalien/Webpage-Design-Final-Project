@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url("nav+footer.css");
+@import url("fullpage.css");
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family:"微軟正黑體";
+}
+
+
+.section{	
+	text-align:center;
+}
+
+.section h2{	
+	margin:20px auto 30px;	
+	color:#fff;
+	width:80%;
+	font-size:30px;
+	font-weight:600;
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing:5px;
+}
+
+.section p{	
+	margin:auto;
+	text-align:left;
+	padding-top:5px;
+	color:#fff;	
+	width:77%;
+	line-height:1.5em;
+	letter-spacing:2px;
+}
+
+.p1{
+	background:url(../images/color_bg.jpg) no-repeat;
+	background-size:cover;
+	
+}
+
+.p2{
+	background-color:#576a8a;
+}
+
+.p3{
+	background-color:#f7c06e;
+}
+
+.p4{
+	background-color:#BEBEBE;
+}
+
+/*footer*/
+footer{
+	display:inline-block;
+	position:fixed;
+	bottom:0px;
+	padding:0px;
+	width:100%;
+	background: rgb(88,107,138,0);
+	text-align:center;
+}
+
+footer a, footer p{
+	display:inline-block;
+	color:#000;
+	font-size:13px;
+}
+
+/*For tablet & pc*/
+@media only screen and (min-width:768px){
+
+.section h2{
+	margn-bottom:40px;	
+	font-size:50px;
+	letter-spacing:3px;
+}
+
+.section p{	
+	text-align:center;
+	letter-spacing:3px;
+	width:80%;
+}
+
+
+}
+
+@media only screen and (min-width:1200px){
+.section p{	
+	letter-spacing:5px;
+	width:70%;
+}
+}
